@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-kubus">
+                <img src="assets/logo.png" alt="Logo Travel Cat" class="logo-image">
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Tentang">Tentang</a></li>
+                <li><a href="#Tujuan">Tujuan</a></li>
+                <li><a href="#Pesan">Pesan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="form-section">
+            <h1 id=Home class="form-title">Travel Cat</h1>
+            <h2 id="welcomeUser" class="welcome-user">Halo, Pengguna!</h2>
+            <p id=Tentang class="form-subtitle">Ini adalah website uji coba Travel Cat</p>
+
+            <form id=Tujuan action="#" method="post" class="form-grid">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Lahir</label>
+                    <input type="date" id="tanggal" name="tanggal">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="laki-laki" name="gender" value="Laki-Laki">
+                        <label for="laki-laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="4"></textarea>
+                </div>
+
+                <form id="Tujuan" action="#" method="post" class="form-grid">
+                    <div class="form-group submit-group">
+                        <button id="submitButton" type="button">Submit</button>
+                    </div>
+                </form>
+            </form>
+        </div>
+
+        <div id=Pesan class="table-section">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Tujuan</th>
+                        <th>Pesan</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bian</td>
+                        <td>December 10, 2017</td>
+                        <td>Perempuan</td>
+                        <td>Jakarta</td>
+                        <td>Happy travel</td>
+                        <td><a href="#">&#x1F5D1;</a></td>
+                    </tr>
+                    <tr>
+                        <td>Revo</td>
+                        <td>Maret 01, 2018</td>
+                        <td>Laki-Laki</td>
+                        <td>Bali</td>
+                        <td>Have a nice trip</td>
+                        <td><a href="#">&#x1F5D1;</a></td>
+                    </tr>
+                    <tr>
+                        <td>Coco</td>
+                        <td>April 11, 2016</td>
+                        <td>Laki-Laki</td>
+                        <td>Batavia</td>
+                        <td>Have a nice trip</td>
+                        <td><a href="#">&#x1F5D1;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Created By RevoU</p>
+        <script src="js/script.js"></script>
+    </footer>
+</body>
+
+</html>

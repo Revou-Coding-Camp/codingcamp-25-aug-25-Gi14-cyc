@@ -1,0 +1,289 @@
+/* Aturan dasar untuk body dan font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header & Navigasi --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Memberi jarak antara logo kubus dan teks brand name */
+}
+
+.logo-kubus {
+    width: 60px;
+    /* Ukuran kotak kuning */
+    height: 60px;
+    border-radius: 10px;
+    /* Sudut membulat */
+    display: flex;
+    justify-content: center;
+    /* Memusatkan gambar secara horizontal */
+    align-items: center;
+    /* Memusatkan gambar secara vertikal */
+    /* Hapus padding jika gambar sudah mengisi penuh */
+}
+
+.logo-image {
+    max-width: 90%;
+    /* Sesuaikan ukuran gambar agar muat di dalam kubus */
+    max-height: 90%;
+    object-fit: contain;
+    /* Memastikan gambar tidak terpotong */
+}
+
+.brand-name {
+    /* Gaya baru untuk teks "Travel Cat" */
+    font-weight: 600;
+    font-size: 24px;
+    /* Ukuran font yang lebih besar */
+    color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.navbar li {
+    border-right: 1px solid #ccc;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #eee;
+}
+
+/* --- Main Content --- */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 24px;
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.submit-group {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.submit-group button {
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.submit-group button:hover {
+    background-color: #555;
+}
+
+/* --- Tabel --- */
+.table-section {
+    flex: 2;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-user {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f8f8f8;
+    color: #555;
+    font-size: 14px;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody td a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: right;
+    padding: 20px 40px;
+    font-size: 12px;
+    color: #888;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* --- Media Queries untuk Responsif --- */
+@media (max-width: 768px) {
+
+    /* Main Content */
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .form-section,
+    .table-section {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Header & Navigasi */
+    .header {
+        flex-direction: column;
+        padding: 15px 20px;
+        align-items: center;
+        /* Ubah ini untuk memusatkan item secara horizontal */
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        border: none;
+    }
+
+    .navbar li {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .navbar li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar a {
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    /* Tabel */
+    .table-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+        /* Atur lebar minimum untuk tabel agar bisa di-scroll */
+    }
+
+    /* Penyesuaian lain */
+    .form-title {
+        font-size: 22px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15px 20px;
+    }
+}
